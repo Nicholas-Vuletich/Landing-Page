@@ -1,0 +1,411 @@
+:root {
+    --boja1: #0d0d0d;
+    --boja2: #0000b3;
+    --boja3:#f2f2f2;
+    --text-color: #333;
+    --background-color:#cccccc;
+    --background-color1:#737373;
+    --background-color-button:#ffff4d;
+    --background-color-button-hover: #ff6666;
+    --linear-gradient-button-hover: linear-gradient(to bottom, #ffff4d, #ff6666);
+  }
+  
+  body{
+    background-color: var(--background-color);
+    margin:0;
+  }
+  
+  .logoiNavbarMainDiv{
+    border: 2px solid #000;
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .logoDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    /* border: 2px solid #1aff1a; */
+    height: 50px;
+    flex:3;
+    background-color:var(--boja1);
+  }
+  
+  .logo{
+    color:var(--background-color1);
+    font-weight: bold;
+  }
+  
+  #header-img{
+    width:2rem;
+    margin-right:1rem;
+  }
+  
+  .navBarDiv{
+    display:flex;
+    /* border: 2px solid #ff1a1a; */
+    height: 50px;
+    flex:7;
+    background-color:var(--boja1);
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .nav-link{
+    margin-left:2rem;
+    margin-right:2rem;
+    font-size:1.4rem;
+    color:var( --background-color1);
+    text-decoration: none;
+    font-family:monospace;
+    font-weight: bold;
+  }
+  
+  .newsletterDivMainContainer{
+    display:flex;
+    flex-direction: column;
+    /* border:2px solid pink; */
+    height:15rem;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .newsletter{
+    font-family: Arial;
+    font-size:3rem;
+    padding-top:5rem;
+  }
+  
+  #form{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  #email{
+    width:15rem;
+    height:2rem;
+    border-radius:0.3rem;
+    margin:0.5rem;
+  }
+  
+  #submit{
+    width:15rem;
+    height:2rem;
+    border-radius:0.3rem;
+    margin:0.5rem;
+    background-color:var(--background-color-button);
+    cursor: pointer;
+    transition: 3s;
+  }
+  
+  #submit:hover{
+    animation-name: emailSubmit;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .opisMainContainer{
+    display:flex;
+    flex-direction: column;
+    max-width:90%;
+    height:30rem;
+    /* border:1px solid purple; */
+    margin:0 auto;
+    padding-top:3rem;
+  }
+  
+  .opisSubContainer{
+    display:flex;
+    max-width:70%;
+    height:10rem;
+    /* border:1px solid green; */
+    margin:0 auto;
+  }
+  
+  .opisSubContainer1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:10rem;
+    /* border:1px solid yellow; */
+    flex:4;
+  }
+  
+  .opisSubContainer2{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    height:10rem;
+    /* border:1px solid yellow; */
+    flex:6;
+  }
+  
+  .velicinaIkone{
+    font-size:4rem;
+  }
+  
+  .opisNaslov{
+    margin-left:1rem;
+    margin-bottom:0;
+    font-size:2rem;
+    font-family:monospace;
+  }
+  
+  .opisParagraf{
+    margin-left:1rem;
+    margin-top:0.5rem;
+    font-size:1.5rem;
+    font-family:monospace;
+  }
+  
+  .youtubeVideoMainContainer{
+    display:flex;
+    max-width:100%;
+    height:30rem;
+    /* border:1px solid brown; */
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .cijeneMainContainer{
+    display:flex;
+    max-width:80%;
+    height:25rem;
+    /* border:1px solid red; */
+    margin:0 auto;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .cijeneDiv{
+    display:flex;
+    flex-direction: column;
+    width:18rem;
+    height:23rem;
+    border:0.2rem solid black;
+    margin:1rem;
+  }
+  
+  .cijeneDivSubContainer{
+    display:flex;
+    width:18rem;
+    height:5rem;
+    background-color: var(--background-color1);
+    margin:0;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .cijeneDivSubContainerNaslov{
+    font-size:1.4rem;
+    font-family:Helvetica;
+  }
+  
+  .cijeneDivSubContainerOpisPizze{
+    display:flex;
+    flex-direction:column;
+    width:18rem;
+    height:18rem;
+    margin:0;
+  }
+  
+  .cijenaPizze{
+    font-size:2.5rem;
+    text-align: center;
+    margin:1rem;
+  }
+  
+  .sastojciPizza{
+    font-family:monospace;
+    font-size:1.5rem;
+    text-align: center;
+    margin:0;
+  }
+  
+  .submitButton{
+    width:9rem;
+    height:4rem;
+    margin:0 auto;
+    margin-top:1rem;
+    font-size:2rem;
+    font-family:Helvetica;
+    font-weight: bold;
+    background:var(--background-color-button);
+    border-radius:1rem;
+    cursor: pointer;
+    transition:  3s;
+  }
+  
+  .submitButton:hover {
+    animation-name: submitHoverGradient;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes submitHoverGradient{
+    from {
+      background: var(--background-color-button);
+    }
+    to {
+      background: var(--linear-gradient-button-hover);
+    }
+  }
+  
+  @keyframes emailSubmit{
+    from {
+      background: var(--background-color-button);
+    }
+    to {
+      background: var(--linear-gradient-button-hover);
+    }
+  }
+  
+  .footer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:8rem;
+    /* border:1px solid black; */
+    background:var(--boja1);
+    margin:0 auto;
+  }
+  
+  .footerSubCont{
+    display:flex;
+    width:100%;
+    height:2rem;
+    /* border:1px solid red; */
+  }
+  
+  .lijeviDivFooter{
+    display:flex;
+    flex:4;
+    width:100%;
+    height:2rem;
+    /* border:1px solid green; */
+    /* justify-items:center; */
+    align-items:center;
+  }
+  
+  .desniDivFooter{
+    display:flex;
+    flex:6;
+    width:100%;
+    height:2rem;
+    /* border:1px solid green; */
+    align-items:center;
+  }
+  
+  .paragrafFooter{
+    color:var(--background-color);
+    font-size:1rem;
+    text-align: left;
+    margin-left:1rem;
+    font-family:monospace;
+  }
+  
+  .footerIkona{
+    color:var(--background-color);
+    font-size:1.2rem;
+    margin-left:1rem;
+  }
+  
+  .dmIkoneDiv{
+    display:flex;
+    align-items:center;
+  }
+  
+  .dmIkone{
+     color:var(--background-color);
+    font-size:1.2rem;
+    margin-left:1rem;
+  }
+  
+  @media(width < 695px){
+    .logoiNavbarMainDiv{
+      display:block;
+    }
+    .newsletter{
+      font-size:1.5rem;
+      padding-top:10rem;
+    }
+  }
+  
+  @media(width < 375px){
+    .newsletter{
+      font-size:1.2rem;
+    }
+  }
+  
+  @media(width < 427px){
+    .nav-link{
+      margin-right:0;
+      margin-left:1rem;
+    }
+  }
+  
+  @media(width < 794px){
+    .opisSubContainer{
+      display:inline-flex;
+    }
+    .velicinaIkone{
+      font-size:2rem;
+    }
+    .opisNaslov{
+      font-size:1rem;
+    }
+    .opisParagraf{
+      font-size:0.9rem;
+    }
+  }
+  
+  @media(width < 590px){
+    #video{
+      width:400px;
+      height:250px;
+    }
+  }
+  
+  @media(width < 400px){
+    #video{
+      width:350px;
+      height:200px;
+    }
+  }
+  
+  @media(width < 980px){
+   .cijeneMainContainer{
+     display:table;
+   }
+  }
+  
+  @media(width < 400px){
+    .paragrafFooter{
+      margin-left:0.2rem;
+    }
+    .footerIkona{
+      margin-left:0;
+    }
+    .dmIkone{
+      margin-left:0.2rem;
+    }
+  }
+  
+  @media(width < 350px){
+    .paragrafFooter{
+      font-size:0.8rem;
+    }
+    .footerIkona{
+      font-size:1rem;
+    }
+    .dmIkone{
+      font-size:1rem;
+    }
+  }
